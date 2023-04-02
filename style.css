@@ -1,71 +1,100 @@
+/* start of home/landing page styles */
 body {
-    background-image: url(https://www.freegreatpicture.com/files/146/24885-colorful-high-resolution-background.jpg);
-    /* background-repeat: no-repeat; */
-    background-size: cover;
-    color: white;
+  background-image: url(https://www.freegreatpicture.com/files/146/24885-colorful-high-resolution-background.jpg);
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  color: white;
 }
 header {
-    font-size: 2rem;
-    padding: 0.5em;
-    /* border: inset 2pt gray; */
-    font-family: 'Courier New', Courier, monospace;
-}
-
-#NameOnHome {
-    font-size: 3rem;
-}
-
-#NameOnHome {
-    
+  font-size: 2rem;
+  /* padding: 0.5em; */
+  font-family: "Courier New", Courier, monospace;
+  /* border: solid black 2pt; */
 }
 
 #NavBar {
-    float: right;
+  float: right;
+  /* border: solid black 2pt; */
 }
 
-#NavBar a {
-    display: inline-block;
-    color: white;
-    text-decoration: none;
-    margin-right: 3rem;
-    /* padding-top: 3rem; */
-    vertical-align: middle;
-   
-
+.NavLink {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  padding: 2rem;
+  margin-right: 0.5rem;
+  /* padding-top: 1rem; */
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+.NavLink:hover {
+  color: black;
+  background: #ddd;
+}
+/* overview styling */
+#overview{
+  margin-top: 12rem;
+  margin-left: 2rem;
+  /* border: 2pt solid black; */
+}
+
+#overview ul li{
+  padding: 2rem;
+}
+h1{
+  font-size: xx-large;
+}
+
+.KnowMeHeading{
+  font-weight: bold;
+  font-size: x-large;
+}
+.KnowMedetails{
+  /* font-weight: bold; */
+  font-size: larger;
+  
+}
+/* start of wavy text animation styles */
+.wavy {
+  /* position: relative; */
+  /* display: flex; */
+  float:left;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+margin-top: 4rem;
+  /* min-height: 70vh; */
+  /* height: 60vh; */
+  /* padding-top: 12rem; */
+  /* border: solid black 2pt; */
+}
+
+.wavy span {
+  font-family: "Courier New", Courier, monospace;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  animation: animate 2s ease-in-out infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
   }
 
-  .wavy {
-    position: relative;
+  20% {
+    transform: translateY(-20px);
   }
 
-  .wavy span {
-    position: relative;
-    display: inline-block;
-    color: #fff;
-    font-size: 3rem;
-    text-transform: uppercase;
-    animation: animate 2s ease-in-out infinite;
-    animation-delay: calc(0.1s * var(--i));
+  40%,
+  100% {
+    transform: translateY(0px);
   }
+}
+/* end of wavy text animation styles */
 
-  @keyframes animate {
-    0% {
-      transform: translateY(0px);
-    }
+/* end of home/langing page styles */
 
-    20% {
-      transform: translateY(-20px);
-    }
-
-    40%,
-    100% {
-      transform: translateY(0px);
-    }
-  }
+/* start of about page styles */

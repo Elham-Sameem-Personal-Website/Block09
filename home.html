@@ -6,38 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="app.js"></script>
+    <script defer src="app.js"></script>
   </head>
-  <body>    
+  <body>
+    <!-- header include nav bar  -->
     <header>
-      <!-- <span id="NameOnHome">Elham Sameem</span> -->
       <nav id="NavBar">
-        <a href="home.html">HOME</a>
-        <a href="about.html">ABOUT</a>
-        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="home.html" class="NavLink">HOME</a>
+        <a href="about.html" class="NavLink">ABOUT</a>
+        <a href="portfolio.html" class="NavLink">PORTFOLIO</a>
       </nav>
     </header>
-
     <main>
-        <div class="wavy">
-            <span style="--i: 1">E</span>
-            <span style="--i: 2">L</span>
-            <span style="--i: 3">H</span>
-            <span style="--i: 4">A</span>
-            <span style="--i: 5">M</span>
-            <span style="--i: 6"> </span>
-            <span style="--i: 7">S</span>
-            <span style="--i: 8">A</span>
-            <span style="--i: 9">M</span>
-            <span style="--i: 10">E</span>
-            <span style="--i: 11">E</span>
-            <span style="--i: 12">M</span>
-            <span style="--i: 16">.</span>
-            <span style="--i: 17">.</span>
-            <span style="--i: 18">.</span>
-            <span style="--i: 19">.</span>
-            <span style="--i: 20">.</span>
-        </div>
+      <!-- adding wavy text content -->
+      <div class="wavy">
+        <span style="--i: 1">E</span>
+        <span style="--i: 2">L</span>
+        <span style="--i: 3">H</span>
+        <span style="--i: 4">A</span>
+        <span style="--i: 5">M</span>
+        <span style="--i: 6"> </span>
+        <span style="--i: 7">S</span>
+        <span style="--i: 8">A</span>
+        <span style="--i: 9">M</span>
+        <span style="--i: 10">E</span>
+        <span style="--i: 11">E</span>
+        <span style="--i: 12">M</span>
+        <span style="--i: 16">.</span>
+        <span style="--i: 17">.</span>
+        <span style="--i: 18">.</span>
+      </div>
+      <br /><br />
+      <!-- section for a quick personality overview -->
+      <section id="overview">
+        <h1>Overview</h1>
+        <ul>
+          <li>
+            <span class="KnowMeHeading">Efficient Organizer: </span
+            ><span class="KnowMedetails"
+              >capable of juggling multiple tasks effectively</span
+            >
+          </li>
+          <li>
+            <span class="KnowMeHeading">Investigative learner: : </span
+            ><span class="KnowMedetails"
+              >able to pick up diverse concepts with ease</span
+            >
+          </li>
+          <li>
+            <span class="KnowMeHeading">Cooperative Communicator: </span
+            ><span class="KnowMedetails"
+              >who enjoys explaining concepts and solving issues both
+              individually and as a team</span
+            >
+          </li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>
