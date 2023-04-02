@@ -1,0 +1,71 @@
+body {
+    background-image: url(https://www.freegreatpicture.com/files/146/24885-colorful-high-resolution-background.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    color: white;
+}
+header {
+    font-size: 2rem;
+    padding: 0.5em;
+    /* border: inset 2pt gray; */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#NameOnHome {
+    font-size: 3rem;
+}
+
+#NameOnHome {
+    
+}
+
+#NavBar {
+    float: right;
+}
+
+#NavBar a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-right: 3rem;
+    /* padding-top: 3rem; */
+    vertical-align: middle;
+   
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .wavy {
+    position: relative;
+  }
+
+  .wavy span {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 3rem;
+    text-transform: uppercase;
+    animation: animate 2s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+  }
+
+  @keyframes animate {
+    0% {
+      transform: translateY(0px);
+    }
+
+    20% {
+      transform: translateY(-20px);
+    }
+
+    40%,
+    100% {
+      transform: translateY(0px);
+    }
+  }
