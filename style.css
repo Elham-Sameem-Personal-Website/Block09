@@ -1,22 +1,15 @@
 body {
     background-image: url(https://www.freegreatpicture.com/files/146/24885-colorful-high-resolution-background.jpg);
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    /* background-position-x: left; */
 }
 header {
     font-size: 2rem;
     padding: 0.5em;
     /* border: inset 2pt gray; */
     font-family: 'Courier New', Courier, monospace;
-}
-
-#NameOnHome {
-    font-size: 3rem;
-}
-
-#NameOnHome {
-    
 }
 
 #NavBar {
@@ -28,28 +21,30 @@ header {
     color: white;
     text-decoration: none;
     margin-right: 3rem;
-    /* padding-top: 3rem; */
+    padding-top: 1rem;
     vertical-align: middle;
    
 
 }
 
 main {
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-  }
+    min-height: 70vh;
+    padding-top: 9rem;
+}
 
   .wavy {
     position: relative;
   }
 
   .wavy span {
+    font-family: 'Courier New', Courier, monospace;
     position: relative;
     display: inline-block;
     color: #fff;
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-transform: uppercase;
     animation: animate 2s ease-in-out infinite;
     animation-delay: calc(0.1s * var(--i));
