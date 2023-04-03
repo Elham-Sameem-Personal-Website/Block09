@@ -1,20 +1,32 @@
-/* start of home/landing page styles */
+/* ------------------------------------start of home/landing page styles -----------------------------------------------*/
 body {
   background-image: url(https://www.freegreatpicture.com/files/146/24885-colorful-high-resolution-background.jpg);
+  /* background-image: url(https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+#aboutbody {
+  background-image: url(https://www.freegreatpicture.com/files/146/24885-colorful-high-resolution-background.jpg);
+  /* background-image: url(https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
+
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
 }
 header {
-  font-size: 2rem;
-  /* padding: 0.5em; */
-  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  /* font-family: "Courier New", Courier, monospace; */
   /* border: solid black 2pt; */
+  display: block;
+  height: 7rem;
+  /* width: max-content; */
 }
 
 #NavBar {
   float: right;
   /* border: solid black 2pt; */
+  font-weight: bold;
 }
 
 .NavLink {
@@ -22,46 +34,52 @@ header {
   color: white;
   text-decoration: none;
   padding: 2rem;
-  margin-right: 0.5rem;
   /* padding-top: 1rem; */
 }
 
-.NavLink:hover {
+/* this styling will lightlight navbar selection and uses js file */
+.NavLink:hover,
+.NavLink[aria-current="page"] {
   color: black;
   background: #ddd;
 }
+
 /* overview styling */
-#overview{
-  margin-top: 12rem;
+#overview {
+  margin-top: 5rem;
   margin-left: 2rem;
+  margin-right: 2rem;
   /* border: 2pt solid black; */
+  color: #ddd;
+}
+#overview ul li:hover {
+  animation: animate 2s ease-in-out;
 }
 
-#overview ul li{
+#overview ul li {
   padding: 2rem;
 }
-h1{
+h1 {
   font-size: xx-large;
 }
 
-.KnowMeHeading{
+.KnowMeHeading {
   font-weight: bold;
-  font-size: x-large;
+  font-size: large;
 }
-.KnowMedetails{
+.KnowMedetails {
   /* font-weight: bold; */
-  font-size: larger;
-  
+  /* font-size: larger; */
 }
 /* start of wavy text animation styles */
 .wavy {
   /* position: relative; */
   /* display: flex; */
-  float:left;
+  float: left;
   justify-content: center;
   align-items: center;
   margin-left: 2rem;
-margin-top: 4rem;
+  margin-top: 1.5rem;
   /* min-height: 70vh; */
   /* height: 60vh; */
   /* padding-top: 12rem; */
@@ -95,6 +113,56 @@ margin-top: 4rem;
 }
 /* end of wavy text animation styles */
 
-/* end of home/langing page styles */
+/* ---------------------------------------------------End of Home/Landing Page styling------------------------------------------------ */
 
-/* start of about page styles */
+/* 
+ */
+/* ---------------------------------------------------Start of ABOUT page styling------------------------------------------------ */
+
+aside {
+  margin-top: 7rem;
+  /* border: solid black 2pt; */
+  max-width: 20%;
+  display: inline-block;
+  color: black;
+}
+
+#aboutleftaside {
+  float: left;
+}
+#aboutrightaside {
+  float: right;
+}
+
+.aboutmesideimgs {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+#aboutmemaindiv {
+  /* border: solid black 2pt; */
+  max-width: 50%;
+  display: inline-block;
+  margin-top: 5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  background-color: rgba(28, 28, 28, 0.491);
+}
+
+#aboutmain {
+  /* border: solid black 2pt; */
+  max-width: 100%;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+  justify-content: center;
+}
+
+#aboutmain p {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+#aboutmeh1 {
+  font-weight: bold;
+  text-align: center;
+}
