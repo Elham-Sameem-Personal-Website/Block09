@@ -4,3 +4,5 @@ document.querySelectorAll('.NavLink').forEach(link => {
         link.setAttribute('aria-current', 'page')
     }
 })
+
+console.log("This is a hidden message for those who wants to inspect for js file (; \n Hello World!")
