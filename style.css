@@ -1,40 +1,42 @@
-/* ------------------------------------start of home/landing page styles -----------------------------------------------*/
-body {
-  background-image: url(https://www.freegreatpicture.com/files/146/24885-colorful-high-resolution-background.jpg);
-  /* background-image: url(https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-}
-#aboutbody {
-  background-image: url(https://www.freegreatpicture.com/files/146/24885-colorful-high-resolution-background.jpg);
-  /* background-image: url(https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2); */
+/* 
 
+  ------------------------------------Start of General styling for whole website -----------------------------------------------
+
+*/
+
+body {
+  /* background-image: url(https://www.freegreatpicture.com/files/146/24885-colorful-high-resolution-background.jpg); */
+  background-image: url(https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: white;
+  min-height: 100vh;
+  margin: 0;
 }
+
 header {
-  font-size: 1.5rem;
-  /* font-family: "Courier New", Courier, monospace; */
   /* border: solid black 2pt; */
-  display: block;
-  height: 7rem;
-  /* width: max-content; */
+  font-size: 1.5rem;
+  display: flex;
+  flex-grow: inherit;
+  flex-shrink: inherit;
+  justify-content: space-between;
+  /* margin-top: 4pt; */
 }
 
 #NavBar {
-  float: right;
   /* border: solid black 2pt; */
-  font-weight: bold;
+  display: inline-flex;
+  justify-content: space-evenly;
 }
 
 .NavLink {
-  display: inline-block;
   color: white;
   text-decoration: none;
-  padding: 2rem;
-  /* padding-top: 1rem; */
+  padding: 1.5rem;
+  margin-left: 1rem;
 }
 
 /* this styling will lightlight navbar selection and uses js file */
@@ -44,52 +46,19 @@ header {
   background: #ddd;
 }
 
-/* overview styling */
-#overview {
-  margin-top: 5rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  /* border: 2pt solid black; */
-  color: #ddd;
-}
-#overview ul li:hover {
-  animation: animate 2s ease-in-out;
-}
-
-#overview ul li {
-  padding: 2rem;
-}
-h1 {
-  font-size: xx-large;
-}
-
-.KnowMeHeading {
-  font-weight: bold;
-  font-size: large;
-}
-.KnowMedetails {
-  /* font-weight: bold; */
-  /* font-size: larger; */
-}
 /* start of wavy text animation styles */
 .wavy {
-  /* position: relative; */
-  /* display: flex; */
-  float: left;
-  justify-content: center;
-  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  display: inline-flex;
+  flex-shrink: inherit;
+  flex-grow: inherit;
   margin-left: 2rem;
-  margin-top: 1.5rem;
-  /* min-height: 70vh; */
-  /* height: 60vh; */
-  /* padding-top: 12rem; */
-  /* border: solid black 2pt; */
+  margin-top: 0.5rem;
 }
 
 .wavy span {
-  font-family: "Courier New", Courier, monospace;
   position: relative;
-  display: inline-block;
+  display: inline-flex;
   color: #fff;
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -111,58 +80,141 @@ h1 {
     transform: translateY(0px);
   }
 }
+
 /* end of wavy text animation styles */
 
-/* ---------------------------------------------------End of Home/Landing Page styling------------------------------------------------ */
+/* Footer Styling */
+footer {
+  /* border: solid 2pt black; */
+  position: sticky;
+  top: 100%;
+  padding: 0.5rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #dddddd5c;
+  margin-top: 3rem;
+}
 
-/* 
- */
-/* ---------------------------------------------------Start of ABOUT page styling------------------------------------------------ */
+#contact {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
 
+/* images in footer */
+footer img {
+  display: inline-block;
+  width: 3rem;
+  height: auto;
+}
+
+/*
+
+------------------------------------End of General styling for whole website -----------------------------------------------
+
+
+
+
+
+
+
+------------------------------------Start of home/landing page styles -----------------------------------------------
+
+*/
+
+/* ------overview styling------ */
+h1 {
+  font-size: xx-large;
+}
+
+#overview {
+  margin-top: 5rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  color: #ddd;
+  font-family: "Courier New", Courier, monospace;
+  font-size: large;
+}
+
+/* adding hover animation to over listings */
+#overview ul li:hover {
+  animation: animate 2s ease-in-out;
+}
+
+#overview ul li {
+  padding: 2rem;
+}
+
+.KnowMeHeading {
+  font-weight: bold;
+  font-size: large;
+}
+
+/* ---------------------------------------------------End of Home/Landing Page styling------------------------------------------------
+
+
+
+
+
+
+
+-------------------------------------------------------Start of About Me Page Styling------------------------------------------------ */
+
+/* sections for each side of the about me page to contain images */
 aside {
-  margin-top: 7rem;
   /* border: solid black 2pt; */
   max-width: 20%;
-  display: inline-block;
+  display: flex;
   color: black;
+  margin: 1rem;
+  margin-top: 6rem;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-#aboutleftaside {
-  float: left;
-}
-#aboutrightaside {
-  float: right;
-}
-
+/* About me page side images */
 .aboutmesideimgs {
   width: 100%;
-  margin-bottom: 1rem;
 }
 
-#aboutmemaindiv {
-  /* border: solid black 2pt; */
-  max-width: 50%;
-  display: inline-block;
-  margin-top: 5rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  background-color: rgba(28, 28, 28, 0.491);
-}
-
+/* The About me page Main div which contains the div funtioning as sub main element */
 #aboutmain {
   /* border: solid black 2pt; */
   max-width: 100%;
-  font-size: large;
-  font-family: 'Courier New', Courier, monospace;
+  display: flex;
   justify-content: center;
 }
 
+/* sub main divider for about me page */
+#aboutmemaindiv {
+  /* border: solid black 2pt; */
+  font-size: large;
+  font-family: "Courier New", Courier, monospace;
+  max-width: 50%;
+  margin-top: 5rem;
+  background-color: rgba(28, 28, 28, 0.491);
+}
+
+/* About me page H1 styling */
+#aboutmeh1 {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* About me page paragraphs */
 #aboutmain p {
   padding-right: 2rem;
   padding-left: 2rem;
 }
 
-#aboutmeh1 {
-  font-weight: bold;
-  text-align: center;
-}
+/* ---------------------------------------------------End of About Me Page Styling----------------------------------------------------
+
+
+
+
+
+
+
+-------------------------------------------------------Start of Portfolio Page Styling------------------------------------------------ */
