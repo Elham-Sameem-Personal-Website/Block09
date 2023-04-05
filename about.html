@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <title>ABOUT</title>
   </head>
+
   <body id="aboutbody">
     <!-- header include nav bar  -->
     <header>
@@ -18,7 +19,7 @@
         <span style="--i: 3">H</span>
         <span style="--i: 4">A</span>
         <span style="--i: 5">M</span>
-        <span style="--i: 6"> </span>
+        <span style="--i: 6">_</span>
         <span style="--i: 7">S</span>
         <span style="--i: 8">A</span>
         <span style="--i: 9">M</span>
@@ -35,30 +36,29 @@
         <a href="portfolio.html" class="NavLink">PORTFOLIO</a>
       </nav>
     </header>
-
-    <aside id="aboutleftaside">
-      <img
-        src="https://img.freepik.com/premium-vector/programmer-working-writing-code-man-typing-keyboard-with-code-screen-web-developer-design-programming-coding-concept_168129-683.jpg"
-        alt="Image not found!"
-        class="aboutmesideimgs"
-        style="height: 13rem"
-      />
-      <br />
-      <img
-        src="https://www.method.com/wp-content/uploads/2021/01/05Writing_Code_That_People_Can_Read-1494357267497-scaled.jpg"
-        alt="Image not found!"
-        class="aboutmesideimgs"
-      />
-      <br />
-      <img
-        src="https://www.neuropeakpro.com/wp-content/uploads/2018/12/Blog-42-1030x542.jpg"
-        alt="Image not found!"
-        class="aboutmesideimgs"
-      />
-    </aside>
-
-    <div id="aboutmemaindiv">
-      <main id="aboutmain">
+    <!-- Main divider for whole About Me page contents -->
+    <main id="aboutmain">
+      <!-- Left side container  for images -->
+      <aside id="aboutleftaside">
+        <img
+          src="https://fsa2-assets.imgix.net/assets/Fullstack_Blog_Image_1280x608-03.png?auto=compress%2Cformat&crop=focalpoint&domain=fsa2-assets.imgix.net&fit=crop&fp-x=0.5&fp-y=0.5&ixlib=php-3.3.0&w=1280"
+          alt="Image not found!"
+          class="aboutmesideimgs"
+          style="height: 13rem"
+        />
+        <img
+          src="https://www.method.com/wp-content/uploads/2021/01/05Writing_Code_That_People_Can_Read-1494357267497-scaled.jpg"
+          alt="Image not found!"
+          class="aboutmesideimgs"
+        />
+        <img
+          src="https://assets-global.website-files.com/5b6df8bb681f89c158b48f6b/5d4acb60d858a31f5936376d_data-center-technician.jpg"
+          alt="Image not found!"
+          class="aboutmesideimgs"
+        />
+      </aside>
+      <!-- Middle container for text and headings for about me -->
+      <div id="aboutmemaindiv">
         <h1 id="aboutmeh1">Let's Know me Better (:</h1>
 
         <article>
@@ -72,6 +72,7 @@
             Center Technician roles in various companies such as: ITRenew,
             Microsoft and Amazon Web Services. <br />
             Writing code is my passion. I started with C++
+            <!-- Adding C++ wikipedia link and icon -->
             <span>
               <a href="https://en.wikipedia.org/wiki/C%2B%2B">
                 <img
@@ -84,6 +85,7 @@
             basics for the very first time and it was very interesting for me to
             know how softwares are written and how they work. And I am very
             excited in learning Web Development through
+            <!-- adding hyperlink for Fullstack Academy -->
             <a
               style="
                 text-decoration: none;
@@ -115,26 +117,50 @@
             Elham out,
           </p>
         </article>
-      </main>
-    </div>
+      </div>
 
-    <aside id="aboutrightaside">
-      <img
-        src="https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_CPP.jpg"
-        alt="Image not found!"
-        class="aboutmesideimgs"
-      />
-      <br />
-      <img
-        src="https://api.time.com/wp-content/uploads/2020/04/video-games-quarantine.jpg"
-        alt="Image not found!"
-        class="aboutmesideimgs"
-      />
-      <img
-        src="https://imgix.bustle.com/elite-daily/2015/08/06035317/Stocksy_txp42baa97c3HZ000_Small_728297.jpg?w=1200&h=630&fit=crop&crop=faces&fm=jpg"
-        alt=""
-        class="aboutmesideimgs"
-      />
-    </aside>
+      <!-- Right side container for images -->
+      <aside id="aboutrightaside">
+        <img
+          src="https://www.simplilearn.com/ice9/free_resources_article_thumb/What_is_CPP.jpg"
+          alt="Image not found!"
+          class="aboutmesideimgs"
+        />
+        <br />
+        <img
+          src="https://api.time.com/wp-content/uploads/2020/04/video-games-quarantine.jpg"
+          alt="Image not found!"
+          class="aboutmesideimgs"
+        />
+        <img
+          src="https://imgix.bustle.com/elite-daily/2015/08/06035317/Stocksy_txp42baa97c3HZ000_Small_728297.jpg?w=1200&h=630&fit=crop&crop=faces&fm=jpg"
+          alt="Image not found!"
+          class="aboutmesideimgs"
+        />
+      </aside>
+    </main>
+    <footer>
+      <!-- Secrtion for contact -->
+      <section id="contact">
+        <!-- github icon -->
+        <a href="https://github.com/elhamsameem"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+            alt="github icon not found"
+        /></a>
+        <!-- gmail icon -->
+        <a href="https://www.google.com/gmail/about/"
+          ><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png"
+            alt="gmail icon not found"
+        /></a>
+        <!-- facebook icon -->
+        <a href="https://www.facebook.com/"
+          ><img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
+            alt="facebook icon not found"
+        /></a>
+      </section>
+    </footer>
   </body>
 </html>
