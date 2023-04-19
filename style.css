@@ -290,6 +290,7 @@ form {
 form label {
   font-size: x-large;
 }
+
 #name,
 #email,
 #message {
@@ -323,4 +324,14 @@ button {
 button:hover {
   background-color: gray;
   color: white;
+}
+
+
+/* Set the display property to "block" to force each element to take up the full width of its parent container */
+form label,
+form input,
+form textarea {
+  display: block;
+  /* Add margin to the bottom of each element to create some visual separation between them */
+  margin-bottom: 1rem;
 }
